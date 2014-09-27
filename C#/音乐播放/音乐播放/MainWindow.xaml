@@ -1,0 +1,135 @@
+﻿<Window x:Class="音乐播放.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MyMusicPlayer" Height="320" Width="600" Loaded="Window_Loaded" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen" Icon="文件名.ico">
+    <Window.Background>
+        <SolidColorBrush Color="#FFA87600" Opacity="1.0"/>
+    </Window.Background>
+
+    <Grid Name="Grid_Main">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="97*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Name="Grid_Down" Grid.Row="1">
+            <Slider Name="Slider_Player" Margin="0,2" Width="580" Background="#FFB3C7FF" Height="5"  Minimum="0" Maximum="100" ValueChanged="Slider_Player_ValueChanged"></Slider>
+        </Grid>
+        <Grid Name="Grid_Top" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid Name="Grid_Show" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"></RowDefinition>
+                    <RowDefinition Height="90*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Name="Grid_Top_2" Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80*"></ColumnDefinition>
+                        <ColumnDefinition Width="10*"></ColumnDefinition>
+                        <ColumnDefinition Width="10*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Image Name="Img_Min" Grid.Column="1" Source="/Images/btnMin_imgSet_On.png" MouseDown="Img_Min_MouseDown"/>
+                    <Image Name="Img_Close" Grid.Column="2" Source="/Images/btnMax_imgSet_On.png" MouseDown="Img_Close_MouseDown"/>
+                </Grid>
+                <Grid Name="Grid_Player" Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25*"></RowDefinition>
+                        <RowDefinition Height="25*"></RowDefinition>
+                        <RowDefinition Height="15*"></RowDefinition>
+                        <RowDefinition Height="20*"></RowDefinition>
+                        <RowDefinition Height="5*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBlock Name="Txb_MusicianName" Text="正在播放" Grid.Row="0" FontSize="48" TextWrapping="Wrap"></TextBlock>
+                    <TextBlock Name="Txb_MusicName" Text="正在播放" Grid.Row="1" FontSize="28" TextWrapping="Wrap"></TextBlock>
+                    <Grid Name="Grid_Control" Grid.Row="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Image Name="Image_Like" Grid.Column="0" Source="/Images/Like.png"/>
+                        <Image Name="Image_Delete" Grid.Column="1" Source="/Images/Delete.png"/>
+                        <Image Name="Image_Back" Grid.Column="3" Source="/Images/Back.png"/>
+                        <Image Name="Image_Play" Grid.Column="5" Source="/Images/Play.png" MouseDown="Image_Play_MouseDown"/>
+                        <Image Name="Image_Next" Grid.Column="7" Source="/Images/Next.png"/>
+                    </Grid>
+                    <Grid Name="Grid_Schedule" Grid.Row="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="85*"></ColumnDefinition>
+                            <ColumnDefinition Width="15*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Slider Name="Slider_Sound" Minimum="0" Maximum="1" Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Center" />
+                    </Grid>
+                    <Grid Grid.Row="4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="80*"></ColumnDefinition>
+                            <ColumnDefinition Width="9*"></ColumnDefinition>
+                            <ColumnDefinition Width="2*"></ColumnDefinition>
+                            <ColumnDefinition Width="9*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Name="Txb_Time_1" Grid.Column="1" Text="0:00"></TextBlock>
+                        <TextBlock Name="Txb_Time_2" Grid.Column="2" Text="/"></TextBlock>
+                        <TextBlock Name="Txb_Time_3" Grid.Column="3" Text="3:00"></TextBlock>
+                    </Grid>
+                </Grid>
+            </Grid>
+            <Grid Name="Grid_Fail" Grid.Column="0" MouseLeave="Grid_Fail_MouseLeave">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="15*"></ColumnDefinition>
+                    <ColumnDefinition Width="85*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid Name="Grid_Set" Grid.Column="0" Margin="5,0,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Image Name="btn_MusicList" Grid.Row="0" Source="/Images/Music_List.png" MouseDown="btn_MusicList_MouseDown">
+                    </Image>
+                    <Image Name="btn_MusicSearch" Grid.Row="1" Source="/Images/Music_Search.png" MouseDown="btn_MusicSearch_MouseDown">
+                    </Image>
+                    <Image Name="btn_MusicAbout" Grid.Row="2" Source="/Images/Music_About.png" MouseDown="btn_MusicAbout_MouseDown">
+                    </Image>
+                </Grid>
+                <Grid Name="Grid_Choose_2" Grid.Column="1">
+                    <Grid Name="Grid_MusicList">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="85*"></RowDefinition>
+                            <RowDefinition Height="15*"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <ListView Name="lsv_Music">
+                                <ListBoxItem/>
+                                <ListBoxItem/>
+                            </ListView>
+                        </Grid>
+                        <Grid Grid.Row="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="70*"></ColumnDefinition>
+                                <ColumnDefinition Width="15*"></ColumnDefinition>
+                                <ColumnDefinition Width="15*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>                          
+                            <Image Name="OpenFolder" Grid.Column="1" Source="/Images/OpenFolder.png"/>
+                            <Image Name="OpenFile" Grid.Column="2" Source="/Images/OpenFile.png" MouseDown="OpenFile_MouseDown"/>
+                        </Grid>
+                    </Grid>
+                    <Grid Name="Grid_MusicSearch" Visibility="Hidden">
+
+                    </Grid>
+                    <Grid Name="Grid_MusicAbout" Visibility="Hidden">
+                        <Button Name="btn_Enter" Content="确定"></Button>
+                    </Grid>
+                </Grid>
+            </Grid>
+            <Image x:Name="Img_Show" Grid.Column="0" Source="/Images/Show_2.jpg" Stretch="Fill" MouseDown="Img_Show_MouseDown" />
+        </Grid>
+    </Grid>
+</Window>
