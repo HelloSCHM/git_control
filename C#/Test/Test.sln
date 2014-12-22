@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{94AE6344-7445-49A6-A6AA-BDEFCEE51469}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DEE289D1-12C2-45E8-AF56-3F9179328DFE} = {DEE289D1-12C2-45E8-AF56-3F9179328DFE}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinEasV2", "..\..\..\实习\step2\eas\WinEasV2\WinEasV2.csproj", "{B5258A16-AE92-4943-A460-EC9053C674E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClEas", "..\..\..\实习\step2\eas\ClEas\ClEas.csproj", "{DEE289D1-12C2-45E8-AF56-3F9179328DFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|.NET = Release|.NET
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94AE6344-7445-49A6-A6AA-BDEFCEE51469}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{94AE6344-7445-49A6-A6AA-BDEFCEE51469}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94AE6344-7445-49A6-A6AA-BDEFCEE51469}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94AE6344-7445-49A6-A6AA-BDEFCEE51469}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{94AE6344-7445-49A6-A6AA-BDEFCEE51469}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{94AE6344-7445-49A6-A6AA-BDEFCEE51469}.Release|.NET.ActiveCfg = Release|Any CPU
+		{94AE6344-7445-49A6-A6AA-BDEFCEE51469}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94AE6344-7445-49A6-A6AA-BDEFCEE51469}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94AE6344-7445-49A6-A6AA-BDEFCEE51469}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{94AE6344-7445-49A6-A6AA-BDEFCEE51469}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{B5258A16-AE92-4943-A460-EC9053C674E8}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{B5258A16-AE92-4943-A460-EC9053C674E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5258A16-AE92-4943-A460-EC9053C674E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5258A16-AE92-4943-A460-EC9053C674E8}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B5258A16-AE92-4943-A460-EC9053C674E8}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B5258A16-AE92-4943-A460-EC9053C674E8}.Release|.NET.ActiveCfg = Release|Any CPU
+		{B5258A16-AE92-4943-A460-EC9053C674E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5258A16-AE92-4943-A460-EC9053C674E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5258A16-AE92-4943-A460-EC9053C674E8}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B5258A16-AE92-4943-A460-EC9053C674E8}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{DEE289D1-12C2-45E8-AF56-3F9179328DFE}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{DEE289D1-12C2-45E8-AF56-3F9179328DFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEE289D1-12C2-45E8-AF56-3F9179328DFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEE289D1-12C2-45E8-AF56-3F9179328DFE}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{DEE289D1-12C2-45E8-AF56-3F9179328DFE}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{DEE289D1-12C2-45E8-AF56-3F9179328DFE}.Release|.NET.ActiveCfg = Release|Any CPU
+		{DEE289D1-12C2-45E8-AF56-3F9179328DFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEE289D1-12C2-45E8-AF56-3F9179328DFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEE289D1-12C2-45E8-AF56-3F9179328DFE}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{DEE289D1-12C2-45E8-AF56-3F9179328DFE}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

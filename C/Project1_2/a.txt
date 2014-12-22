@@ -1,0 +1,18 @@
+#include<stdio.h>
+void main()
+{
+ int a,b,c; 
+ scanf("%d%d",&a,&b);
+ printf("a=%d,b=%d\n",a,b);
+ c=a+b;
+ printf("a+b=%f\n",c);
+ c=a*b;
+ printf("a*b=%f\n",c);
+ c=a/b;
+ printf("a*b=%f\n",c);
+ if(a>b)
+    a=100;
+ else 
+   b=100;
+
+}

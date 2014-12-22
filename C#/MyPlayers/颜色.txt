@@ -1,0 +1,25 @@
+private Color aColor_Back = Color.FromArgb(24, 51, 60);
+
+private Color aColor_NowLyric = Color.FromArgb(212, 245, 255);
+
+private Color aColor_NormalLyric = Color.FromArgb(84, 142, 165);
+
+Back:0,0,0
+NowLyric:0,255,0
+NormalLyric:0,128,192
+
+Back:245,138,67
+NowLyric:255,255,255
+NormalLyric:128,0,0
+
+Back:28,60,125
+NowLyric:255,255,255
+NormalLyric:128,176,255
+
+Back:244,251,254
+NowLyric:0,84,137
+NormalLyric:0,140,193
+
+Back:37,38,57
+NowLyric:232,232,232
+NormalLyric:117,120,171
